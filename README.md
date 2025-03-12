@@ -1,1 +1,6 @@
-# IT2234-Web-Services-Sever-Technologies
+# IT2234-Web-Services-Sever-Technologies![Q3](https://github.com/user-attachments/assets/24679bc5-a51b-46a6-b612-8c55ad1aa6fa)
+![Q2](https://github.com/user-attachments/assets/c41786ca-a1c8-4f81-9ae7-3f63f0900774)
+![Q1](https://github.com/user-attachments/assets/597902a6-8f50-4403-8c4b-64b538dd6793)
+![Mathematical](https://github.com/user-attachments/assets/870e1f92-6de1-4545-980e-4f3e981fb9cd)
+![Hello World](https://github.com/user-attachments/assets/339ac3b0-117f-4e76-81bf-211b60bcfef4)
+![Q4](https://github.com/user-attachments/assets/ee300f42-1d0b-4e8d-9a1b-a796ea0713cb)

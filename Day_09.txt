@@ -1,0 +1,152 @@
+//Command Shell
+
+show databases
+
+show collections
+
+use unidb
+
+-------------------Adding one data using mongodb----------------------
+  "regno": "2021IT01",
+  "name": "Kolins",
+  "age": 24,
+  "gender": "Male",
+  "degree": "IT",
+  "gpa": 3.5,
+  "skills": [
+    "JS",
+    "Mongodb",
+    "Node"
+  ]
+  
+-------------------Adding one data with commands using shell----------------------
+db.student.insertOne(
+{
+  "regno": "2021IT06",
+  "name": "Mazshi",
+  "age": 24,
+  "gender": "Female",
+  "degree": "IT",
+  "gpa": 3.5,
+  "skills": [
+    "JS",
+    "Mongodb",
+    "Node"
+  ]
+}
+)
+
+
+-------------------Adding many data with commands using shell----------------------
+
+
+db.student.insertMany(
+	[
+		{
+			"regno": "2021IT07",
+			"name": "Sithu",
+			"age": 23,
+			"gender": "Female",
+			"degree": "IT",
+			"gpa": 3.7,
+			"skills": [
+				"Java",
+				"Python",
+				"Node"
+			]
+		},
+		{
+			"regno": "2021IT08",
+			"name": "Nuwee",
+			"age": 24,
+			"gender": "Female",
+			"degree": "IT",
+			"gpa": 3.8,
+			"skills": [
+				"JS",
+				"Java",
+				"Node"
+			]
+		},
+		{
+			"regno": "2021IT09",
+			"name": "Sawi",
+			"age": 25,
+			"gender": "Female",
+			"degree": "IT",
+			"gpa": 3.6,
+			"skills": [
+				"JS",
+				"Mongodb",
+				"Node"
+			]
+		},
+	]
+)
+
+----------------------Finding students by gender---------------------------------------------------
+
+db.student.find({"gender":"Male"})
+
+
+
+
+---------------------To find first output---------------------------------------
+
+db.student.findOne({"gender":"Male"})
+
+
+
+
+------------------Finding students who are elder than 22---------------------
+
+{age:{$gt:22}}                                    //mongodb command
+
+db.student.find({"age":{$gt:22}})
+
+
+
+
+------------------Finding students who knows mongodb---------------------
+
+{skills:{$in:["Mongodb"]}}                        //mongodb command
+
+db.student.find({"skills":"Mongodb"})
+
+
+------------------Finding students who knows mongodb & java---------------------
+
+
+{skills:{$in:["Mongodb","Java"]}}                 //mongodb command
+
+
+
+------------------Finding students who are not in mongodb & java---------------------
+
+{skills:{$nin:["Mongodb","Java"]}}                //mongodb command
+
+
+-----------------Sorting according to gpa----------------------------
+//using mongodb
+{gpa:1}   //Ascending order
+{gpa:-1}  //Descending order
+
+
+db.student.find().sort({'gpa':1})    // using command shell
+
+
+
+------------------IT students Sorted by gpa----------------------------
+
+db.student.find({'degree':'IT'}).sort({'gpa':1})
+
+
+
+-----------------Male IT students sort by their age--------------------
+
+db.student.find({'gender':'Male'}).sort({'age':1})
+
+
+-----------------Multiple conditions-----------------------------------
+
+db.student.find({'gender':'Male','degree':'IT'}).sort({'age':1})

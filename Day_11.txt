@@ -1,0 +1,68 @@
+use sampledb
+
+db.dropDatabase()        //to drop a database
+
+use checkdb
+
+db.sampledata.drop()     //to drop  a collection
+
+use unidb
+
+-----in the "degrees" collection---------
+
+//To delete one data
+db.degrees.deleteOne({_id:ObjectId('6818e3f774df54abb3c666f0')})
+
+
+//To show the names of reserved data
+db.degrees.find().projection(['name'])
+
+
+//To show the IDs of reserved data
+db.degrees.find().projection([{'name':1},{'_id':-1}])
+
+
+//To show the entire details of reserved data
+db.degrees.find().projection(['name','duration'])
+
+
+//To show the name of reserved data as a proper way
+db.degrees.find({},{name:1,_id:0}).pretty()
+
+
+//To delete the data which the duration is less than 4
+db.degrees.deleteMany({duration:{$lt:4}})
+
+
+//To show the name of reserved data
+db.degrees.find({},{name:1,_id:0}).pretty()
+
+
+//To update one data
+db.degrees.updateOne({_id:ObjectId('6818e56174df54abb3c666f3')},{$set:{name:'BIT',duration:3}})
+
+//To find the updated data
+db.degrees.findOne({_id:ObjectId('6818e56174df54abb3c666f3')})
+
+
+//To update the duration by increasing 1 which the duraion is greater than 4
+db.degrees.updateMany({duration:{$gte:4}},{$inc:{duration:1}})
+
+
+//To show the details
+db.degrees.find()
+
+
+
+
+
+-----------------in the student collection-----------------
+
+
+//To update the data of an array
+db.student.updateOne({regno:'2021IT01'},{$push:{skills:'PHP'}})
+
+
+
+//To show the updated data
+db.student.findOne({regno:'2021IT01'})

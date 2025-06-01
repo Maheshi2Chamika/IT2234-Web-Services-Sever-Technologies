@@ -1,1 +1,10 @@
 # IT2234-Web-Services-Sever-Technologies
+![08](https://github.com/user-attachments/assets/6ce7ea67-869e-407f-9d0f-f06072366102)
+![07](https://github.com/user-attachments/assets/a8cf3649-2e5f-4b27-a113-ecee8b137e36)
+![06](https://github.com/user-attachments/assets/ae022886-2a31-4c24-af70-11d741a0d2f9)
+![05](https://github.com/user-attachments/assets/1365fb16-7c90-4dd2-9794-efb052a85889)
+![04](https://github.com/user-attachments/assets/bb395085-3890-4edc-a240-13a5c1de66fe)
+![03](https://github.com/user-attachments/assets/4aee5588-9ddd-4732-b559-4e96f60ce585)
+![02](https://github.com/user-attachments/assets/1d0cea44-69c8-470a-b1f6-bad3cd683c70)
+![01](https://github.com/user-attachments/assets/b026f5c3-02d7-47fb-9380-02046bed5476)
+![09](https://github.com/user-attachments/assets/4cbd2c19-da75-4d75-a9be-808f9149aa64)
